@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './css/app.css';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <p> My Token = {window.token}</p>
     </div>
   );
 }

@@ -20,6 +20,7 @@ def index(
     limit = request.args.get("limit", limit, int)
 
     repositories = search_service.search_repositories(query, limit)
-    return render_template(
-        "index.html", query=query, limit=limit, repositories=repositories
-    )
+    # return render_template(
+    #     "index.html", query=query, limit=limit, repositories=repositories
+    # )
+    return render_template("index.html", flask_token="Hello, World!!!")
