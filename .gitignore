@@ -1,0 +1,10 @@
+**/__pycache__
+**/*.pyc
+**/.vscode
+**/.venv
+**/htmlcov
+src/githubnav.egg-info
+.DS_Store
+.coverage
+.python-version
+.pytest_cache/
