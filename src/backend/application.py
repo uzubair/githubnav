@@ -6,6 +6,7 @@ from .containers import Container
 from . import views
 import os
 
+
 def create_app() -> Flask:
     config_file = os.path.join(".", "src", "backend", "config.yml")
     container = Container()
