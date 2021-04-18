@@ -1,11 +1,15 @@
 """ Views module """
-from flask import request, render_template
+from flask import Blueprint, request, render_template
 from dependency_injector.wiring import inject, Provide
 
-from .containers import Container
+from backend.containers import Container
 from backend.services.search import SearchService
 
 
+home_view = Blueprint("home_view", __name__)
+
+
+@home_view.route("/")
 @inject
 def index(
     search_service: SearchService = Provide[Container.search_service],
