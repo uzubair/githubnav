@@ -1,6 +1,6 @@
 github:
   request_timeout: 15
-  api_key: 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
+  api_key:
 default:
   query: "Dependency Injector"
   limit: 10
